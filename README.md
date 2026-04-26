@@ -36,7 +36,7 @@ El proyecto se organiza de forma modular para separar responsabilidades:
 ## Enlace al Repositorio
 
 Aquí puedes ver mi primer portafolio módulo 3
-👉[https://github.com/pilucasanovavera-gif/weather-frontend-m2](https://github.com/pilucasanovavera-gif/weather-frontend-m2)
+👉[https://github.com/pilucasanovavera-gif/weather-frontend-m3](https://github.com/pilucasanovavera-gif/weather-frontend-m3)
 
 ## 👩‍💻 Autor
 
