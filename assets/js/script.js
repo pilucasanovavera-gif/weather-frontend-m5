@@ -8,8 +8,6 @@ const datosClima = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  // 👉 SOLO redirige, sin guardar nada
   const botones = document.querySelectorAll(".ver-detalle");
 
   botones.forEach((boton) => {
@@ -18,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 👉 SIEMPRE usamos Puerto Montt
   const data = datosClima["Puerto Montt"];
 
   const ciudadEl = document.getElementById("ciudad");
@@ -29,10 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("estado").textContent = data.estado;
     document.getElementById("humedad").textContent =
       "💧 Humedad: " + data.humedad;
-    document.getElementById("viento").textContent =
-      "🌬️ Viento: " + data.viento;
+    document.getElementById("viento").textContent = "🌬️ Viento: " + data.viento;
 
-    // Pronóstico
     const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"];
     const lista = document.getElementById("lista");
 
