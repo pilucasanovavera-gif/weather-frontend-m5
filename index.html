@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clima360 | Pronóstico del tiempo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <title>Clima360 | Pronóstico del Tiempo</title>
+
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
@@ -32,17 +29,17 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container mt-5 glass-container">
       <section class="container mt-5">
         <div class="row g-4">
           <article class="col-12 col-md-6 col-lg-4">
             <div class="weather-card shadow text-center">
               <div class="weather-card__body">
-                <h5 class="weather-card__city">🌧️ Valdivia</h5>
-                <p class="weather-card__temp">12°C - Lluvioso</p>
+                <h5 class="weather-card__city">☀️ Arica</h5>
+                <p class="weather-card__temp">20°C - Soleado</p>
                 <button
                   class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Valdivia"
+                  data-ciudad="Arica"
                 >
                   Ver más
                 </button>
@@ -53,71 +50,11 @@
           <article class="col-12 col-md-6 col-lg-4">
             <div class="weather-card shadow text-center">
               <div class="weather-card__body">
-                <h5 class="weather-card__city">☀️ Santiago</h5>
-                <p class="weather-card__temp">25°C - Soleado</p>
+                <h5 class="weather-card__city">☁️ Iquique</h5>
+                <p class="weather-card__temp">19°C - Despejado</p>
                 <button
                   class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Santiago"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-12 col-md-6 col-lg-4">
-            <div class="weather-card shadow text-center">
-              <div class="weather-card__body">
-                <h5 class="weather-card__city">⛅ Puerto Montt</h5>
-                <p class="weather-card__temp">15°C - Nublado</p>
-                <button
-                  class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Puerto Montt"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-12 col-md-6 col-lg-4">
-            <div class="weather-card shadow text-center">
-              <div class="weather-card__body">
-                <h5 class="weather-card__city">🌬️ Punta Arenas</h5>
-                <p class="weather-card__temp">8°C - Ventoso</p>
-                <button
-                  class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Punta Arenas"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-12 col-md-6 col-lg-4">
-            <div class="weather-card shadow text-center">
-              <div class="weather-card__body">
-                <h5 class="weather-card__city">☀️ La Serena</h5>
-                <p class="weather-card__temp">22°C - Soleado</p>
-                <button
-                  class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="La Serena"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article class="col-12 col-md-6 col-lg-4">
-            <div class="weather-card shadow text-center">
-              <div class="weather-card__body">
-                <h5 class="weather-card__city">🌧️ Temuco</h5>
-                <p class="weather-card__temp">13°C - Lluvioso</p>
-                <button
-                  class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Temuco"
+                  data-ciudad="Iquique"
                 >
                   Ver más
                 </button>
@@ -143,11 +80,26 @@
           <article class="col-12 col-md-6 col-lg-4">
             <div class="weather-card shadow text-center">
               <div class="weather-card__body">
-                <h5 class="weather-card__city">☀️ Iquique</h5>
-                <p class="weather-card__temp">23°C - Soleado</p>
+                <h5 class="weather-card__city">☁️ La Serena</h5>
+                <p class="weather-card__temp">18°C - Nubosidad</p>
                 <button
                   class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Iquique"
+                  data-ciudad="La Serena"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="weather-card shadow text-center">
+              <div class="weather-card__body">
+                <h5 class="weather-card__city">☀️ Santiago</h5>
+                <p class="weather-card__temp">25°C - Soleado</p>
+                <button
+                  class="btn btn-primary weather-card__btn ver-detalle"
+                  data-ciudad="Santiago"
                 >
                   Ver más
                 </button>
@@ -159,7 +111,7 @@
             <div class="weather-card shadow text-center">
               <div class="weather-card__body">
                 <h5 class="weather-card__city">🌧️ Concepción</h5>
-                <p class="weather-card__temp">14°C - Lluvioso</p>
+                <p class="weather-card__temp">14°C - Lluvia débil</p>
                 <button
                   class="btn btn-primary weather-card__btn ver-detalle"
                   data-ciudad="Concepción"
@@ -173,11 +125,56 @@
           <article class="col-12 col-md-6 col-lg-4">
             <div class="weather-card shadow text-center">
               <div class="weather-card__body">
-                <h5 class="weather-card__city">☀️ Arica</h5>
-                <p class="weather-card__temp">26°C - Soleado</p>
+                <h5 class="weather-card__city">🌧️ Temuco</h5>
+                <p class="weather-card__temp">13°C - Lluvioso</p>
                 <button
                   class="btn btn-primary weather-card__btn ver-detalle"
-                  data-ciudad="Arica"
+                  data-ciudad="Temuco"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="weather-card shadow text-center">
+              <div class="weather-card__body">
+                <h5 class="weather-card__city">🌧️ Valdivia</h5>
+                <p class="weather-card__temp">12°C - Lluvioso</p>
+                <button
+                  class="btn btn-primary weather-card__btn ver-detalle"
+                  data-ciudad="Valdivia"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="weather-card shadow text-center">
+              <div class="weather-card__body">
+                <h5 class="weather-card__city">🌧️ Puerto Montt</h5>
+                <p class="weather-card__temp">11°C - Lluvia</p>
+                <button
+                  class="btn btn-primary weather-card__btn ver-detalle"
+                  data-ciudad="Puerto Montt"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-6 col-lg-4">
+            <div class="weather-card shadow text-center">
+              <div class="weather-card__body">
+                <h5 class="weather-card__city">🌬️ Punta Arenas</h5>
+                <p class="weather-card__temp">8°C - Ventoso</p>
+                <button
+                  class="btn btn-primary weather-card__btn ver-detalle"
+                  data-ciudad="Punta Arenas"
                 >
                   Ver más
                 </button>
@@ -198,7 +195,7 @@
         </small>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
