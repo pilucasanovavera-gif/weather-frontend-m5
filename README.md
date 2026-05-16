@@ -28,7 +28,7 @@ La estructura SASS sigue el patrón modular para separar responsabilidades (Abst
 
 ## Enlace al Repositorio
 
-Aquí puedes ver mi primer portafolio módulo 4
+Aquí puedes ver el portafolio módulo 4
 👉[https://github.com/pilucasanovavera-gif/weather-frontend-m4](https://github.com/pilucasanovavera-gif/weather-frontend-m4)
 
 ## 👩‍💻 Autor
