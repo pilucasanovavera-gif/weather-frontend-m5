@@ -1,42 +1,35 @@
-# Portafolio Weather Frontend - M3 🌤️
+# Portafolio App de Clima Dinámica - M4 🌤️
 
-Este portafolio consiste en una aplicación de clima desarrollada para el Módulo 3 del Bootcamp, con un enfoque principal en la refactorización de estilos, preprocesamiento con SASS y la implementación de una arquitectura escalable.
+Este proyecto es una aplicación de clima interactiva desarrollada para el **Módulo 4**
 
-## Tecnologías usadas
+## Nuevas Funcionalidades del Módulo 
+En esta iteración, la aplicación dejó de tener datos "quemados" en el HTML para pasar a un modelo de datos robusto:
+- **Modelo de Datos Dinámico:** Uso de un arreglo de objetos (`lugares`) que contiene información detallada de 10 ciudades de Chile.
+- **Cálculo de Estadísticas:** Implementación de funciones que recorren los pronósticos para calcular:
+    - Temperaturas mínimas, máximas y promedios semanales.
+    - Conteo de días según el estado del clima.
+- **Resumen Textual Inteligente:** Uso de estructuras condicionales para generar un resumen automático de la semana (ej: "Semana mayormente soleada").
+- **Persistencia de Selección:** Comunicación entre la vista principal y la vista de detalle mediante `localStorage`.
 
-- HTML5 para la estructura semántica.
-- SASS (SCSS) utilizando la arquitectura 7-1 para la organización de estilos.
-- Bootstrap 5 para el sistema de rejilla y componentes responsivos.
-- JavaScript para manipulación del DOM y persistencia de datos local.
-- Repositorio público en GitHub.
+## 🛠️ Tecnologías Usadas
 
- ## Metodología de Estilos: BEN 
-Para garantizar un código mantenible y legible, se aplicó la metodología BEM (Block, Element, Modifier). Un ejemplo claro en el proyecto es el componente de tarjetas de clima:
+- **JavaScript (ES6+):** Manipulación avanzada del DOM, uso de ciclos (`forEach`), constantes, variables y funciones de flecha.
+- **SASS (SCSS):** Arquitectura 7-1 para una organización de estilos escalable y mantenible.
+- **Bootstrap 5:** Sistema de rejilla para un diseño 100% responsivo.
+- **HTML5:** Estructura semántica para accesibilidad.
 
-.weather-card (Bloque)
+## 📐 Arquitectura de Estilos y Metodología BEM
 
-.weather-card__city (Elemento)
-
-.weather-card__btn--active (Modificador)
-
-
-## Estructura SASS (Arquitectura 7-1)
-El proyecto se organiza de forma modular para separar responsabilidades:
-
-- abstracts/: Contiene variables (_variables.scss) y mixins (_mixin.scss) que no generan CSS por sí solos.
-
-- base/: Estilos globales y reseteo (_reset.scss).
-
-- components/: Pequeños componentes reutilizables como botones y tarjetas (_cards.scss).
-
-- layout/: Estilos para las grandes secciones del sitio como el header, footer y el contenedor principal.
-
-- vendors/: Configuraciones de librerías externas como Bootstrap.
+Se mantiene el uso de la metodología **BEM (Block, Element, Modifier)** para garantizar la legibilidad del código CSS:
+- `.weather-card` (Bloque)
+- `.weather-card__city` (Elemento)
+- `.weather-card__btn--active` (Modificador)
+La estructura SASS sigue el patrón modular para separar responsabilidades (Abstracts, Base, Components, Layout, Vendors).
 
 ## Enlace al Repositorio
 
 Aquí puedes ver mi primer portafolio módulo 3
-👉[https://github.com/pilucasanovavera-gif/weather-frontend-m3](https://github.com/pilucasanovavera-gif/weather-frontend-m3)
+👉[https://github.com/pilucasanovavera-gif/weather-frontend-m4](https://github.com/pilucasanovavera-gif/weather-frontend-m4)
 
 ## 👩‍💻 Autor
 
