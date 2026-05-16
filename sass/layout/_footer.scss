@@ -2,20 +2,19 @@
 @use "../abstracts/mixin" as *;
 
 .main-footer {
-   
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
-    &__text {
-        font-weight: 500;
-        letter-spacing: 0.5px;
-    }
+  &__text {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
 
-    &__brand {
-        display: block;
-        margin-top: 5px;
-        text-transform: uppercase;
-        font-size: 0.75rem;
-    }
+  &__brand {
+    display: block;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
 }
