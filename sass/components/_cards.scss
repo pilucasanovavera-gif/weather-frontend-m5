@@ -2,10 +2,10 @@
 @use "../abstracts/mixin" as *;
 
 .weather-card {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  color: #212529;
   padding: 2rem;
   border-radius: 20px;
   transition:
@@ -56,4 +56,59 @@
       color: black;
     }
   }
+}
+
+#stat-alerta-icono {
+  background-color: #ffffff;
+  border: 2px solid #212529;
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#stat-alerta-texto {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #212529;
+}
+
+.alerta-estable {
+  background: radial-gradient(
+    circle at 45px 45px,
+    rgba(234, 246, 219, 1) 0%,
+    rgba(244, 249, 237, 0.3) 65%
+  );
+  border: 1px solid rgba(139, 195, 74, 0.3) !important;
+}
+
+.alerta-calor {
+  background: radial-gradient(
+    circle at 45px 45px,
+    rgba(255, 238, 140, 1) 0%,
+    rgba(255, 249, 206, 0.3) 65%
+  );
+  border: 1px solid rgba(255, 193, 7, 0.3) !important;
+}
+
+.alerta-lluvia {
+  background: radial-gradient(
+    circle at 45px 45px,
+    rgba(186, 230, 253, 1) 0%,
+    rgba(224, 242, 254, 0.3) 65%
+  );
+  border: 1px solid rgba(14, 165, 233, 0.3) !important;
+}
+
+.alerta-frio {
+  background: radial-gradient(
+    circle at 45px 45px,
+    rgba(219, 234, 254, 1) 0%,
+    rgba(239, 246, 255, 0.3) 65%
+  );
+  border: 1px solid rgba(59, 130, 246, 0.3) !important;
 }

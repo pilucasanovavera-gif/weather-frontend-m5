@@ -1,35 +1,50 @@
-# Portafolio App de Clima Dinámica - M4 🌤️
+# Clima360 - Panel de Monitoreo Meteorológico
 
-Este proyecto es una aplicación de clima interactiva desarrollada para el **Módulo 4**
+¡Bienvenido a **Clima360**! Esta aplicación es una plataforma interactiva diseñada para el monitoreo del clima actual, el pronóstico semanal y el análisis estadístico de diversas ciudades de Chile. El proyecto ha sido reestructurado por completo para cumplir con los estándares modernos de desarrollo de software.
 
-## Nuevas Funcionalidades del Módulo 
-En esta iteración, la aplicación dejó de tener datos "quemados" en el HTML para pasar a un modelo de datos robusto:
-- **Modelo de Datos Dinámico:** Uso de un arreglo de objetos (`lugares`) que contiene información detallada de 10 ciudades de Chile.
-- **Cálculo de Estadísticas:** Implementación de funciones que recorren los pronósticos para calcular:
-    - Temperaturas mínimas, máximas y promedios semanales.
-    - Conteo de días según el estado del clima.
-- **Resumen Textual Inteligente:** Uso de estructuras condicionales para generar un resumen automático de la semana (ej: "Semana mayormente soleada").
-- **Persistencia de Selección:** Comunicación entre la vista principal y la vista de detalle mediante `localStorage`.
+---
 
-## 🛠️ Tecnologías Usadas
+## 🛠️ Tecnologías y Conceptos Aplicados
 
-- **JavaScript (ES6+):** Manipulación avanzada del DOM, uso de ciclos (`forEach`), constantes, variables y funciones de flecha.
-- **SASS (SCSS):** Arquitectura 7-1 para una organización de estilos escalable y mantenible.
-- **Bootstrap 5:** Sistema de rejilla para un diseño 100% responsivo.
-- **HTML5:** Estructura semántica para accesibilidad.
+- **JavaScript Moderno (ES6+):** Uso estricto de declaraciones de variables con `let` y `const`, funciones de flecha (`=>`), desestructuración y plantillas literales (_template literals_) para la manipulación limpia del DOM.
+- **Programación Orientada a Objetos (POO):** Modularización del código a través de clases con responsabilidades únicas y bien definidas.
+- **Programación Asíncrona:** Implementación del método `fetch` integrado con estructuras `async/await` y bloques `try...catch...finally` para asegurar una gestión robusta de peticiones HTTP y control de excepciones.
+- **Diseño e Interfaz:** Maquetación responsiva utilizando componentes de **Bootstrap** y preprocesamiento de estilos estructurado mediante la arquitectura 7-1 de **Sass** (`@use`).
 
-## 📐 Arquitectura de Estilos y Metodología BEM
+---
 
-Se mantiene el uso de la metodología **BEM (Block, Element, Modifier)** para garantizar la legibilidad del código CSS:
-- `.weather-card` (Bloque)
-- `.weather-card__city` (Elemento)
-- `.weather-card__btn--active` (Modificador)
-La estructura SASS sigue el patrón modular para separar responsabilidades (Abstracts, Base, Components, Layout, Vendors).
+## 📂 Arquitectura de Clases
+
+La lógica de negocio se dividió de manera modular en las siguientes entidades:
+
+1. **`ApiClient`**: Clase especializada y encargada de la comunicación externa. Ejecuta la petición asíncrona hacia el origen de datos utilizando promesas nativas y maneja los códigos de estado de la respuesta.
+2. **`WeatherApp`**: Clase maestra y cerebro de la aplicación. Se encarga de capturar el estado global de los lugares, procesar la información del pronóstico, ejecutar las fórmulas estadísticas, evaluar las reglas de negocio para alertas de clima y renderizar dinámicamente las vistas del DOM.
+3. **`main.js`**: Orquestador principal que evalúa de forma dinámica el contexto de navegación en el que se encuentra el usuario (`index.html` o `detalle.html`) para inicializar las instancias de las clases correspondientes.
+
+---
+
+## 📊 Lógica de Negocio y Estadísticas
+
+Los datos meteorológicos ya no se encuentran fijos en el frontend; se consumen de manera asíncrona desde un archivo de datos estruturado en formato **JSON** (`/data/clima.json`), simulando un comportamiento de API REST real.
+
+Al acceder a la vista detallada de un lugar, el sistema procesa el arreglo del pronóstico utilizando iteradores avanzados para calcular en tiempo real:
+
+- **Temperatura Mínima Absoluta:** Identificación de la menor temperatura registrada en el período.
+- **Temperatura Máxima Absoluta:** Identificación del máximo de calor de la semana.
+- **Promedio Semanal:** Cálculo matemático de la media aritmética ponderada de las temperaturas ($\text{Promedio} = \frac{\sum (\text{Min} + \text{Max}) / 2}{N}$).
+- **Conteo de Condiciones:** Contadores específicos de días soleados o con precipitaciones.
+
+### Reglas de Alertas Automatizadas
+
+- **Alerta de Calor:** Se gatilla si el promedio de la semana supera los $22^\circ\text{C}$.
+- **Semana Lluviosa:** Se activa automáticamente si el pronóstico cuenta con $3$ o más días con condiciones de lluvia o chubascos.
+
+---
 
 ## Enlace al Repositorio
 
 Aquí puedes ver el portafolio módulo 4
-👉[https://github.com/pilucasanovavera-gif/weather-frontend-m4](https://github.com/pilucasanovavera-gif/weather-frontend-m4)
+👉git clone [https://github.com/tu-usuario/weather-frontend-m5.git](https://github.com/tu-usuario/weather-frontend-m5.git)
 
 ## 👩‍💻 Autor
 

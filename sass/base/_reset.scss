@@ -24,6 +24,32 @@ main {
   margin-top: 2rem;
 }
 
+#ciudad {
+  font-weight: 700;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#estado {
+  font-size: 1.5rem;
+  overflow-wrap: break-word;
+  line-height: 1.3;
+  color: #555;
+}
+
+@media (max-width: 400px) {
+  #ciudad {
+    font-size: 2.2rem !important;
+  }
+
+  #estado {
+    font-size: 1.2rem !important;
+  }
+}
+
 @keyframes moverNubes {
   from {
     background-position: 0 center;

@@ -1,0 +1,194 @@
+{
+  "lugares": [
+    {
+      "id": 1,
+      "nombre": "Arica",
+      "climaActual": {
+        "temperatura": 20,
+        "estado": "Soleado",
+        "humedad": 60,
+        "viento": 10
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 17, "max": 22, "estado": "Soleado" },
+        { "dia": "Martes", "min": 18, "max": 23, "estado": "Soleado" },
+        { "dia": "Miércoles", "min": 17, "max": 24, "estado": "Soleado" },
+        { "dia": "Jueves", "min": 19, "max": 25, "estado": "Soleado" },
+        { "dia": "Viernes", "min": 18, "max": 23, "estado": "Soleado" },
+        { "dia": "Sábado", "min": 17, "max": 22, "estado": "Despejado" },
+        { "dia": "Domingo", "min": 16, "max": 21, "estado": "Despejado" }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Iquique",
+      "climaActual": {
+        "temperatura": 19,
+        "estado": "Despejado",
+        "humedad": 65,
+        "viento": 14
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 15, "max": 21, "estado": "Despejado" },
+        { "dia": "Martes", "min": 16, "max": 22, "estado": "Soleado" },
+        { "dia": "Miércoles", "min": 16, "max": 22, "estado": "Soleado" },
+        { "dia": "Jueves", "min": 17, "max": 23, "estado": "Despejado" },
+        { "dia": "Viernes", "min": 15, "max": 21, "estado": "Despejado" },
+        { "dia": "Sábado", "min": 15, "max": 20, "estado": "Parcial" },
+        { "dia": "Domingo", "min": 14, "max": 19, "estado": "Parcial" }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Antofagasta",
+      "climaActual": {
+        "temperatura": 24,
+        "estado": "Soleado",
+        "humedad": 55,
+        "viento": 16
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 18, "max": 25, "estado": "Soleado" },
+        { "dia": "Martes", "min": 19, "max": 26, "estado": "Soleado" },
+        { "dia": "Miércoles", "min": 19, "max": 27, "estado": "Soleado" },
+        { "dia": "Jueves", "min": 20, "max": 28, "estado": "Soleado" },
+        { "dia": "Viernes", "min": 18, "max": 26, "estado": "Soleado" },
+        { "dia": "Sábado", "min": 17, "max": 24, "estado": "Despejado" },
+        { "dia": "Domingo", "min": 17, "max": 23, "estado": "Despejado" }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "La Serena",
+      "climaActual": {
+        "temperatura": 18,
+        "estado": "Nubosidad",
+        "humedad": 70,
+        "viento": 12
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 12, "max": 19, "estado": "Parcial" },
+        { "dia": "Martes", "min": 11, "max": 18, "estado": "Nublado" },
+        { "dia": "Miércoles", "min": 13, "max": 20, "estado": "Soleado" },
+        { "dia": "Jueves", "min": 12, "max": 21, "estado": "Soleado" },
+        { "dia": "Viernes", "min": 11, "max": 19, "estado": "Parcial" },
+        { "dia": "Sábado", "min": 12, "max": 18, "estado": "Nublado" },
+        { "dia": "Domingo", "min": 11, "max": 17, "estado": "Parcial" }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Santiago",
+      "climaActual": {
+        "temperatura": 25,
+        "estado": "Soleado",
+        "humedad": 40,
+        "viento": 8
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 11, "max": 26, "estado": "Soleado" },
+        { "dia": "Martes", "min": 12, "max": 27, "estado": "Soleado" },
+        { "dia": "Miércoles", "min": 13, "max": 29, "estado": "Soleado" },
+        { "dia": "Jueves", "min": 14, "max": 30, "estado": "Soleado" },
+        { "dia": "Viernes", "min": 12, "max": 28, "estado": "Soleado" },
+        { "dia": "Sábado", "min": 11, "max": 25, "estado": "Despejado" },
+        { "dia": "Domingo", "min": 10, "max": 24, "estado": "Despejado" }
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Concepción",
+      "climaActual": {
+        "temperatura": 14,
+        "estado": "Lluvia débil",
+        "humedad": 80,
+        "viento": 20
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 9, "max": 15, "estado": "Lluvia" },
+        { "dia": "Martes", "min": 8, "max": 14, "estado": "Lluvia" },
+        { "dia": "Miércoles", "min": 10, "max": 16, "estado": "Chubascos" },
+        { "dia": "Jueves", "min": 8, "max": 13, "estado": "Nublado" },
+        { "dia": "Viernes", "min": 9, "max": 15, "estado": "Parcial" },
+        { "dia": "Sábado", "min": 9, "max": 14, "estado": "Lluvia" },
+        { "dia": "Domingo", "min": 8, "max": 13, "estado": "Lluvia" }
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Temuco",
+      "climaActual": {
+        "temperatura": 13,
+        "estado": "Lluvioso",
+        "humedad": 85,
+        "viento": 15
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 7, "max": 14, "estado": "Lluvia" },
+        { "dia": "Martes", "min": 6, "max": 13, "estado": "Lluvia" },
+        { "dia": "Miércoles", "min": 8, "max": 15, "estado": "Chubascos" },
+        { "dia": "Jueves", "min": 5, "max": 12, "estado": "Nublado" },
+        { "dia": "Viernes", "min": 7, "max": 14, "estado": "Lluvia" },
+        { "dia": "Sábado", "min": 6, "max": 13, "estado": "Nublado" },
+        { "dia": "Domingo", "min": 5, "max": 11, "estado": "Parcial" }
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Valdivia",
+      "climaActual": {
+        "temperatura": 12,
+        "estado": "Lluvioso",
+        "humedad": 88,
+        "viento": 18
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 6, "max": 13, "estado": "Lluvia" },
+        { "dia": "Martes", "min": 5, "max": 12, "estado": "Lluvia" },
+        { "dia": "Miércoles", "min": 7, "max": 14, "estado": "Lluvia" },
+        { "dia": "Jueves", "min": 6, "max": 11, "estado": "Chubascos" },
+        { "dia": "Viernes", "min": 8, "max": 13, "estado": "Lluvia" },
+        { "dia": "Sábado", "min": 5, "max": 12, "estado": "Lluvia" },
+        { "dia": "Domingo", "min": 4, "max": 10, "estado": "Nublado" }
+      ]
+    },
+    {
+      "id": 9,
+      "nombre": "Puerto Montt",
+      "climaActual": {
+        "temperatura": 11,
+        "estado": "Lluvia",
+        "humedad": 90,
+        "viento": 22
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 5, "max": 12, "estado": "Lluvia" },
+        { "dia": "Martes", "min": 4, "max": 11, "estado": "Lluvia" },
+        { "dia": "Miércoles", "min": 6, "max": 13, "estado": "Chubascos" },
+        { "dia": "Jueves", "min": 4, "max": 10, "estado": "Nublado" },
+        { "dia": "Viernes", "min": 6, "max": 12, "estado": "Chubascos" },
+        { "dia": "Sábado", "min": 5, "max": 11, "estado": "Lluvia" },
+        { "dia": "Domingo", "min": 3, "max": 9, "estado": "Lluvia" }
+      ]
+    },
+    {
+      "id": 10,
+      "nombre": "Punta Arenas",
+      "climaActual": {
+        "temperatura": 8,
+        "estado": "Ventoso",
+        "humedad": 75,
+        "viento": 35
+      },
+      "pronosticoSemanal": [
+        { "dia": "Lunes", "min": 2, "max": 8, "estado": "Viento" },
+        { "dia": "Martes", "min": 1, "max": 7, "estado": "Chubascos" },
+        { "dia": "Miércoles", "min": 3, "max": 9, "estado": "Viento" },
+        { "dia": "Jueves", "min": 2, "max": 6, "estado": "Nublado" },
+        { "dia": "Viernes", "min": 0, "max": 7, "estado": "Viento" },
+        { "dia": "Sábado", "min": -1, "max": 5, "estado": "Escarcha" },
+        { "dia": "Domingo", "min": 1, "max": 6, "estado": "Viento" }
+      ]
+    }
+  ]
+}

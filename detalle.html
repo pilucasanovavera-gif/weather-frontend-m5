@@ -12,14 +12,9 @@
     <header class="main-header">
       <nav class="navbar navbar-expand-lg navbar-dark main-nav">
         <div class="container">
-          <a class="navbar-brand main-nav__logo" href="index.html"
-            >🌎 SkyWeather</a
-          >
+          <a class="navbar-brand main-nav__logo" href="index.html">🌎 SkyWeather</a>
 
-          <a
-            href="index.html"
-            class="btn btn-outline-light rounded-pill d-inline-flex align-items-center gap-2"
-          >
+          <a href="index.html" class="btn btn-outline-light rounded-pill d-inline-flex align-items-center gap-2">
             <i class="bi bi-arrow-left"></i>
             <span>Volver al Inicio</span>
           </a>
@@ -28,32 +23,60 @@
     </header>
 
     <main class="container mt-5 text-center min-vh-100">
-      <div class="bg-white bg-opacity-75 p-5 rounded-4 shadow-sm">
-        <p class="text-muted">
-          Referencia: <span id="referencia">Puerto Montt</span>
-        </p>
-        <h2 id="ciudad" class="display-5 fw-bold"></h2>
+      <div class="bg-white bg-opacity-75 p-4 p-sm-5 rounded-4 shadow-sm">
+        <div id="loader" class="text-muted mb-3" style="display: none">
+          <div class="spinner-border spinner-border-sm text-primary" role="status"></div>
+          <span> Cargando datos meteorológicos...</span>
+        </div>
+        
+        <div id="error-message" class="alert alert-danger" style="display: none"></div>
+
+        <p class="text-muted">Referencia: <span id="referencia">--</span></p>
+        <h2 id="ciudad" class="display-5 fw-bold text-dark"></h2>
         <h3 id="temp" class="display-6 text-primary"></h3>
         <p id="estado" class="lead font-italic"></p>
 
-        <div class="row mt-4 justify-content-center">
-          <div class="col-md-3">
+        <div class="row mt-4 justify-content-center g-3">
+          <div class="col-6 col-md-3">
             <p class="fw-bold mb-0">💧 Humedad</p>
-            <p id="humedad">--%</p>
+            <p id="humedad" class="mb-0">--%</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-md-3">
             <p class="fw-bold mb-0">💨 Viento</p>
-            <p id="viento">-- km/h</p>
+            <p id="viento" class="mb-0">-- km/h</p>
           </div>
         </div>
 
         <h4 class="mt-5 mb-4">Pronóstico semanal</h4>
         <div class="row justify-content-center">
-          <div class="col-md-8">
-            <ul
-              class="list-group list-group-flush shadow-sm rounded"
-              id="lista"
-            ></ul>
+          <div class="col-12 col-md-8">
+            <ul class="list-group list-group-flush shadow-sm rounded" id="lista"></ul>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-12 col-md-8">
+            <div class="card shadow-sm border-0 p-3 p-sm-4 bg-light bg-opacity-50 rounded-4 text-start">
+              <h5 class="fw-bold mb-3 text-dark text-center">Estadísticas Semanales</h5>
+              
+              <p class="mb-2 text-secondary text-center">
+                <strong>Mínima:</strong> <span id="stat-min" class="text-dark fw-bold">--°C</span> |
+                <strong>Máxima:</strong> <span id="stat-max" class="text-dark fw-bold">--°C</span>
+              </p>
+              
+              <p class="mb-3 text-secondary text-center">
+                <strong>Promedio:</strong> <span id="stat-promedio" class="text-primary fw-bold">--°C</span>
+              </p>
+              
+              <hr class="my-3 opacity-25" />
+
+              <div id="stat-alerta-container" class="d-flex align-items-center justify-content-center gap-3 p-3 rounded-3 mt-2 w-100">
+                <div id="stat-alerta-icono" class="fs-2 flex-shrink-0"></div>
+                <div id="stat-alerta-texto" class="fw-bold mb-0">
+                  Evaluando condiciones...
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -64,9 +87,12 @@
         <p class="main-footer__text mb-0">
           © 2026 Clima360 🌤️ | Desarrollado por Pilar Casanova ☁️
         </p>
-        <small class="text-white-50">Portafolio Front-End - Bootcamp</small>
+        <small class="main-footer__brand text-secondary">Portafolio Front-End - Bootcamp</small>
       </div>
     </footer>
-    <script src="./assets/js/script.js"></script>
+
+    <script src="./assets/js/ApiClient.js"></script>
+    <script src="./assets/js/WeatherApp.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
