@@ -44,7 +44,7 @@ Al acceder a la vista detallada de un lugar, el sistema procesa el arreglo del p
 ## Enlace al Repositorio
 
 Aquí puedes ver el portafolio módulo 4
-👉git clone [https://github.com/tu-usuario/weather-frontend-m5.git](https://github.com/tu-usuario/weather-frontend-m5.git)
+👉git clone [https://github.com/tu-usuario/weather-frontend-m5.git](https://github.com/pilucasanovavera-gif/weather-frontend-m5)
 
 ## 👩‍💻 Autor
 
